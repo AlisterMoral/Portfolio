@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Alister</title>
+    <link rel="stylesheet" href="./style/style.css"> 
+</head>
+<body>
+    <header>
+        <!-- pensé a faire un boutton pour traduire la page -->
+        <div id="logo-header">
+            <img src="style/images/logo.png" class="logo-header" alt="Logo Alister"> 
+        </div>
+        <nav>
+            <button id="menu-icon">☰</button> <!-- Bouton menu, styliser dans CSS -->
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="text-section">
+                <h1>Moral</h1>
+                <h2>Alister</h2>
+                <p>Développeur Front-End</p>
+                <p>"I'm learning a lot"</p>
+            </div>
+            <div class="icon-section">
+                <img src="style/images/jsgif.gif" alt="video de code"> 
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-description">
+                <h2 class="about-title">A propos de moi</h2>
+                <p>Je suis passionné par le <strong> développement front-end </strong> et le <strong>web design</strong>,
+                    depuis mon plus jeune âge je suis derrière les écrans. J'aime <strong>apprendre</strong> et <strong>comprendre</strong> comment les technologies marchent et évoluent au fur et à mesure des années
+                </p>  
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="project">
+                <div class="project-info">
+                    <h3>Oh my food</h3>
+                    <p class="project-description">Dans ce projet j'ai dû réaliser le front-end d'une application mobile de restaurants qui combinait animation CSS et développement responsive.</p>
+                </div>
+                <div class="project-image-container">
+                    <a href="https://alistermoral.github.io/Ohmyfood/" target="_blank">
+                        <img src="style/images/ohmyfood.png" alt="Oh my food project screenshot" class="project-image">
+                    </a>
+                   
+                    <div class="tech-info">
+                        <a href="https://github.com/alistermoral" target="_blank" class="github-link">GitHub</a>
+                        <img src="style/images/html.png" alt="HTML Logo" class="tech-logo">
+                        <img src="style/images/css.png" alt="CSS Logo" class="tech-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <h3>ArgentBank</h3>
+                    <p class="project-description">Dans ce projet, j'ai développé une application bancaire avec React, implémentant des fonctionnalités de connexion sécurisée et de gestion de comptes utilisateurs.</p>
+                </div>
+                <div class="project-image-container">
+                        <img src="style/images/argentbank.png" alt="ArgentBank project screenshot" class="project-image">
+                    <div class="tech-info">
+                        <a href="https://github.com/AlisterMoral/ArgentBank-website" target="_blank" class="github-link">GitHub</a>
+                        <img src="style/images/react.png" alt="React Logo" class="react-logo">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="skills">
+            <h2 class="compétences">Compétences</h2>
+            <div class="circle-container">
+                <div class="loader"></div>
+                <div class="logo" id="html-logo"><img src="style/images/html.png" alt="HTML Logo">
+                <span>HTML</span>
+                </div>
+                <div class="logo" id="css-logo"><img src="style/images/css.png" alt="CSS Logo">
+                <span>CSS</span>
+                </div>
+                <div class="logo" id="js-logo"><img src="style/images/javascript.jpg" alt="JavaScript Logo">
+                <span>JAVASCRIPT</span>
+                </div>
+                <div class="logo" id="react-logo"><img src="style/images/react.png" alt="React Logo">
+                <span>REACT.JS</span>
+                </div>   
+            </div>
+        </section>
+        
+        
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <a href="https://www.linkedin.com/in/alister-moral-1b4374266/">LinkedIn</a>
+            <a href="https://github.com/AlisterMoral">GitHub</a>
+            <!-- Ajoute d'autres liens sociaux si nécessaire -->
+        </section>
+    </main>
+</body>
+</html>

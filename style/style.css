@@ -1,0 +1,283 @@
+
+#html-logo, #css-logo, #js-logo, #react-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+header {
+    background-color: rgb(199, 197, 197);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-header img {
+    width: 80px;
+    height: auto;
+}
+
+#menu-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.text-section {
+    flex-basis: 50%;
+    margin-left: 150px;
+}
+
+.text-section h1, .text-section h2, .text-section p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#hero h1, #hero h2 {
+    font-family: 'Playfair Display', serif;
+    line-height: 4rem;
+    font-size: 4rem;
+}
+
+#hero p {
+    max-width: 450px;
+    word-break: break-word;
+    font-size: 2em;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.icon-section img {
+    width: 80%;
+    height: auto;
+    margin-right: 80px;
+}
+
+#about, #projects, #skills, #contact {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-description {
+    width: 40%;
+}
+
+.project-image {
+    width: 50%;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    border-color: red;
+}
+
+.project {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    margin-left: 180px;
+    color: #333;
+}
+
+.tech-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-info a {
+  align-self: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.tech-info a:hover, .tech-info span:hover {
+    background-color: #ccc;
+}
+
+.tech-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.github-link {
+    padding: 8px 12px;
+    background: #eee;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.github-link:hover {
+    background-color: #ccc;
+}
+
+.project-description{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.react-logo{
+   width: 100px;
+}
+
+.compétences{
+    margin-bottom: 70px;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px; 
+}
+
+
+.logo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    flex-direction: column; 
+    text-align: center; 
+    padding: 10px;
+}
+
+.logo span {
+    font-size: 13px; 
+    color: black; 
+  
+}
+
+#html-logo { transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg); }
+#css-logo { transform: translate(-50%, -50%) rotate(90deg) translate(150px) rotate(-90deg); }
+#js-logo { transform: translate(-50%, -50%) rotate(180deg) translate(150px) rotate(-180deg); }
+#react-logo { transform: translate(-50%, -50%) rotate(270deg) translate(150px) rotate(-270deg); }
+
+
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#html-logo img, #css-logo img {
+    width: 60px; 
+    height: auto;
+}
+
+#js-logo img {
+    width: 60px;
+}
+
+#react-logo img{
+width: 100px;
+}
+
+.loader {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #000; 
+    border-top: 5px solid #fff; 
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
