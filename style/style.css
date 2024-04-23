@@ -13,7 +13,7 @@ body, html {
 
 
 header {
-    background-color: rgb(199, 197, 197);
+    background-color: rgb(128, 128, 128);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -29,6 +29,25 @@ main {
     width: 80px;
     height: auto;
 }
+nav {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    font-size: 16px; 
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
 
 #menu-icon {
     font-size: 24px;
@@ -113,6 +132,7 @@ a:hover {
     border: 2px solid transparent;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .project-image:hover {
@@ -134,7 +154,7 @@ a:hover {
 #projects h2 {
     font-size: 3rem;
     margin-left: 180px;
-    color: #333;
+    color: black;
 }
 
 .tech-info {
@@ -164,19 +184,39 @@ a:hover {
     margin-top: 5px;
 }
 
-.github-link {
+.github-link, .linkedin-link {
     padding: 8px 12px;
-    background: #eee;
-    border-radius: 25px;
+    border-radius: 5px;
     text-decoration: none;
-    color: #333;
-    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.github-link {
+    background-color: #fff; 
+    color: #333; 
+    border: 2px solid black; 
 }
 
 .github-link:hover {
-    background-color: #ccc;
+    background-color: black; 
+    color: #fff; 
 }
+
+.linkedin-link {
+    background-color: #fff; 
+    color: #0077B5; 
+    border: 2px solid #0077B5; 
+}
+
+.linkedin-link:hover {
+    background-color: #0077B5; 
+    color: #fff; 
+}
+
 
 .project-description{
     width: 50%;
@@ -197,14 +237,15 @@ a:hover {
    width: 100px;
 }
 
-.compétences{
+.compétences {
     margin-bottom: 70px;
+    font-size: 3rem;
+    margin-left: 180px;
 }
 
 #skills {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 80px; 
 }
@@ -280,4 +321,122 @@ width: 100px;
     100% {
         transform: rotate(360deg);
     }
+}
+
+.parcours-pro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: black; 
+}
+
+.parcours-title{
+    font-size: 3rem;
+    margin-left: 180px;
+    color: white;
+}
+
+.card {
+    width: 400px; 
+    margin: 10px;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 10px;
+    margin-left: 180px;
+}
+
+.card h3 {
+    color: #333; 
+    margin-bottom: 5px;
+}
+
+.card-date {
+    font-style: italic;
+    color: #666; 
+    margin-bottom: 10px;
+}
+
+.card-description {
+    text-align: justify;
+    color: #444; 
+}
+
+.contact-title{
+    font-size: 3rem;
+    margin-left: 180px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-link{
+    display: flex;
+   align-self: center;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#footer-logo img {
+    height: 150px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+.icon-section img {
+     width: 80%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.text-section {
+    margin-left: 50px;
+}
+
+#projects h2 {
+    margin-left: 50px;
+}
+
+.project-description {
+    width: 70%;
+
+}
+
+.project-image{
+    width: 70%;
+}
+
+.compétences{
+    margin-left: 50px;
+}
+
+.parcours-title{
+    margin-left: 50px;
+}
+
+.card {
+    margin-left: 50px;
+}
+
+}
+
+
+@media screen and  (max-width: 767.98px) {
+
+
 }

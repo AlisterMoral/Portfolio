@@ -10,14 +10,18 @@
 </head>
 <body>
     <header>
-        <!-- pensé a faire un boutton pour traduire la page -->
         <div id="logo-header">
-            <img src="style/images/logo.png" class="logo-header" alt="Logo Alister"> 
+            <img src="style/images/logo.png" class="logo-header" alt="Logo Alister">
         </div>
         <nav>
-            <button id="menu-icon">☰</button> <!-- Bouton menu, styliser dans CSS -->
+            <a href="#hero">Accueil</a>
+            <a href="#about">À Propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#contact">Contactez-Moi</a>
         </nav>
     </header>
+    
     <main>
         <section id="hero">
             <div class="text-section">
@@ -57,6 +61,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="project">
                 <div class="project-info">
                     <h3>ArgentBank</h3>
@@ -70,7 +75,6 @@
                     </div>
                 </div>
             </div>
-            
         </section>
         
         <section id="skills">
@@ -78,27 +82,51 @@
             <div class="circle-container">
                 <div class="loader"></div>
                 <div class="logo" id="html-logo"><img src="style/images/html.png" alt="HTML Logo">
-                <span>HTML</span>
+                    <span>HTML</span>
                 </div>
                 <div class="logo" id="css-logo"><img src="style/images/css.png" alt="CSS Logo">
-                <span>CSS</span>
+                    <span>CSS</span>
                 </div>
                 <div class="logo" id="js-logo"><img src="style/images/javascript.jpg" alt="JavaScript Logo">
-                <span>JAVASCRIPT</span>
+                    <span>JAVASCRIPT</span>
                 </div>
                 <div class="logo" id="react-logo"><img src="style/images/react.png" alt="React Logo">
-                <span>REACT.JS</span>
+                    <span>REACT.JS</span>
                 </div>   
+            </div>
+        </section>
+        <!--pensé a ajouté une section pour le parcours pro-->
+        <section class="parcours-pro">
+            <h2 class="parcours-title">Formation</h2>
+            <div class="card">
+                <h3>Formation Diplomante Intégrateur web</h3>
+                <p class="card-date">Aout 2023 - Mai 2024</p>
+                <p class="card-description">Parcours intégrateur web</p>
+            </div>
+
+            <div class="card">
+                <h3>Odin-Project</h3>
+                <p class="card-date">Janvier 2023 - juin 2023</p>
+                <p class="card-description">Formation gratuite The Odin-project</p>
             </div>
         </section>
         
         
         <section id="contact">
-            <h2>Contactez-moi</h2>
-            <a href="https://www.linkedin.com/in/alister-moral-1b4374266/">LinkedIn</a>
-            <a href="https://github.com/AlisterMoral">GitHub</a>
-            <!-- Ajoute d'autres liens sociaux si nécessaire -->
+            <h2 class="contact-title">Contactez-moi</h2>
+            <div class="contact-link">
+                <a href="https://github.com/AlisterMoral" target="_blank" class="github-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/alister-moral-1b4374266/" target="_blank" class="linkedin-link">LinkedIn</a>
+            </div>
         </section>
+
+        <footer>
+            <div id="footer-logo">
+                <img src="style/images/logo.png" class="logo-footer" alt="Logo Alister">
+            </div>
+        </footer>
+        
+        
     </main>
 </body>
 </html>
