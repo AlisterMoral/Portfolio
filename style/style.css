@@ -505,11 +505,23 @@ footer {
 
 @media screen and (max-width: 767.98px) {
 
- nav {
-    display: flex;
-    flex-direction: column;
- }
+    #navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 
+    #menu-icon {
+        display: block; 
+        cursor: pointer;
+        color: white; 
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
     .icon-section img {
         margin-left: 0px; 
         margin-right: 0px;
