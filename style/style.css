@@ -1,16 +1,8 @@
-
-#html-logo, #css-logo, #js-logo, #react-logo {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', Arial, sans-serif;
 }
-
 
 header {
     background-color: black;
@@ -29,6 +21,7 @@ main {
     width: 80px;
     height: auto;
 }
+
 nav {
     display: flex;
     justify-content: space-around; 
@@ -48,7 +41,6 @@ nav a:hover {
     background-color: white;
     color: black;
 }
-
 
 #menu-icon {
     font-size: 24px;
@@ -84,7 +76,6 @@ nav a:hover {
 
 #hero p {
     max-width: 450px;
-    word-break: break-word;
     font-size: 2em;
     margin-top: 16px;
     margin-bottom: 15px;
@@ -98,6 +89,9 @@ nav a:hover {
 
 #about, #projects, #skills, #contact {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 ul {
@@ -127,24 +121,28 @@ a:hover {
     width: 40%;
 }
 
-.project-image {
-    width: 50%;
-    border-radius: 8px;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.project-image:hover {
-    transform: scale(1.05);
-    border-color: red;
-}
-
 .project {
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: white;  
+    border-radius: 8px;       
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    margin: 20px;             
+    padding: 20px;            
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;  
+   margin-left: 100px; 
+   margin-right: 100px;  
+   cursor: pointer;    
+}
+
+.project:hover {
+    transform: scale(1.05); 
+    border-color: black; 
+}
+
+.project-image-container {
+    flex: 1;                  
+    padding: 10px;           
 }
 
 .project h3 {
@@ -158,20 +156,30 @@ a:hover {
     color: black;
 }
 
-.tech-info {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+.project-info {
+    padding: 10px 0; 
 }
 
-.tech-info a {
-  align-self: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 5px;
+.project-description {
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 20px; 
+}
+
+.tech-info {
+    display: flex;
+    justify-content: start; 
+    width: 100%; 
+    gap: 10px;
+    align-items: center;
+}
+
+.project-image {
+    width: 1050px; 
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .tech-info a:hover, .tech-info span:hover {
@@ -200,6 +208,7 @@ a:hover {
     background-color: #fff; 
     color: #333; 
     border: 2px solid black; 
+    height: 25px;
 }
 
 .github-link:hover {
@@ -218,109 +227,73 @@ a:hover {
     color: #fff; 
 }
 
-
-.project-description{
-    width: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    font-size: 25px;
-}
-
-.project-info{
-    display: flex;
-    flex-direction: column;
-}
-
 .react-logo{
    width: 100px;
 }
 
-.compétences {
-    margin-bottom: 70px;
-    font-size: 3rem;
+.javascript-logo {
+    height: 70px;
+}
+
+
+.skills-title {
     margin-left: 180px;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-#skills {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+   width: 50%;
+    margin: auto;
+}
+
+.skill {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin-top: 80px; 
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
-.logo {
-    position: absolute;
-    width: 80px;
-    height: 80px;
+.skill-bar-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-    flex-direction: column; 
-    text-align: center; 
-    padding: 10px;
+    width: 100%;
 }
 
-.logo span {
-    font-size: 12px; 
-    color: black; 
+.skill-bar {
+    height: 20px;
+    border-radius: 8px;
+    background-color: #ddd; 
 }
 
-#html-logo { transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg); }
-#css-logo { transform: translate(-50%, -50%) rotate(90deg) translate(150px) rotate(-90deg); }
-#js-logo { transform: translate(-50%, -50%) rotate(180deg) translate(150px) rotate(-180deg); }
-#react-logo { transform: translate(-50%, -50%) rotate(270deg) translate(150px) rotate(-270deg); }
+.javascript-bar { background-color: #f0db4f; }
+.html-bar { background-color: #e34c26; }
+.css-bar { background-color: #264de4; }
+.react-bar { background-color: #61DBFB; }
+.git-bar { background-color: #000000; }
+.photoshop-bar{background-color: #021c84;}
 
+.width-90 { width: 90%; }
+.width-70 { width: 70%; }
+.width-80 {width: 80%;}
+.width-50 {width: 50%;}
 
-.circle-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border: 10px solid black;
-    border-radius: 50%;
-    margin: auto; 
+.skill-bar-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 100%;
 }
-
-
-#html-logo img, #css-logo img {
-    width: 60px; 
-    height: auto;
-}
-
-#js-logo img {
-    width: 60px;
-}
-
-#react-logo img{
-width: 100px;
-}
-
-.loader {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: relative;
-    border: 5px solid #000; 
-    border-top: 5px solid #fff; 
-    animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.skill-percentage {
+    margin-left: 10px;
 }
 
 .parcours-pro {
@@ -424,7 +397,6 @@ width: 100px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
 }
 
-
 footer {
     background-color: black;
     padding: 10px 20px;
@@ -442,8 +414,7 @@ footer {
     height: 150px;
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1400px){
 
 .icon-section img {
      width: 80%;
@@ -464,11 +435,32 @@ footer {
 
 }
 
+.project-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project-image{
     width: 70%;
 }
 
+.project-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-info{
+    justify-content: center;
+}
 .compétences{
+    margin-left: 50px;
+}
+
+.skills-title{
     margin-left: 50px;
 }
 
@@ -500,9 +492,7 @@ footer {
     margin-top: 10px; 
     align-self: center; 
 }
-
 }
-
 @media screen and (max-width: 767.98px) {
 
     #navbar {
@@ -527,12 +517,36 @@ footer {
         margin-right: 0px;
         display: none;
     }
+
+    #hero h1{
+        font-size: 3rem;
+    }
+
+    #hero h2{
+        font-size: 3rem;
+    }
+
+    #hero{
+        justify-content: center;
+    }
     .text-section {
         margin-left: 0px; 
     }
 
     .about-description{
         width: 100%;
+    }
+
+    .project{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     #projects h2 {
@@ -547,9 +561,10 @@ footer {
 
     .project-image {
         margin-left: 0px; 
+        width: 350px;
     }
 
-    .compétences {
+    .skills-title {
         margin-left: 15px;
         display: flex;
         font-size: 2rem;
@@ -595,37 +610,37 @@ footer {
         font-size: 25px;
     }
 
-    .loader{
-        width: 230px;
-        height: 230px;
-    }
-
-    .circle-container{
-        width: 250px;
-        height: 250px;
-    }
-
     .logo{
         width: 60px;
         height: 60px;
     }
 
-    #html-logo { transform: translate(-75%, -50%) rotate(0deg) translate(150px) rotate(0deg); }
-    #css-logo { transform: translate(-50%, -75%) rotate(90deg) translate(150px) rotate(-90deg); }
-    #js-logo { transform: translate(-30%, -50%) rotate(180deg) translate(150px) rotate(-180deg); }
-    #react-logo { transform: translate(-50%, -30%) rotate(270deg) translate(150px) rotate(-270deg); }
-
-    #react-logo img {
-        width: 80px;
+    .skills-grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    #js-logo img{
-        width: 45px;
+    
+    #navbar {
+    display: none;
+    animation: slideFromRight 0.5s ease forwards;
     }
 
-    #html-logo img, #css-logo img {
-        width: 45px;
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
+     #menu-icon.active + #navbar {
+         display: block;
+}
 
+#close-icon {
+    font-size: 24px; 
+    cursor: pointer; 
+    color: white;   
+}
+}
