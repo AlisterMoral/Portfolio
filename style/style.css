@@ -511,6 +511,8 @@ footer {
     nav a {
         display: block;
         text-align: center;
+        width: 70%;
+        margin-left: 30px;
     }
     .icon-section img {
         margin-left: 0px; 
@@ -615,6 +617,26 @@ footer {
         height: 60px;
     }
 
+    #logo-header {
+        margin-left: 20px; 
+    }
+    
+
+    header {
+        background-color: black;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; 
+    }
+    
+    #close-icon {
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+
     .skills-grid{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -634,13 +656,6 @@ footer {
     }
 }
 
-     #menu-icon.active + #navbar {
-         display: block;
-}
+ 
 
-#close-icon {
-    font-size: 24px; 
-    cursor: pointer; 
-    color: white;   
-}
 }
