@@ -296,7 +296,7 @@ a:hover {
     margin-left: 10px;
 }
 
-.parcours-pro {
+#parcours-pro {
     display: flex;
     flex-direction: column;
     margin-top: 60px;

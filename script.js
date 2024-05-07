@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('logo-header').style.display = 'block'; 
     });
     
-
     window.addEventListener('resize', function() {
         if (window.innerWidth > 767.98) {
             navbar.style.display = 'flex';
