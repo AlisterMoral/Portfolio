@@ -231,6 +231,10 @@ a:hover {
    width: 100px;
 }
 
+.api-logo {
+    width: 50px;
+}
+
 .javascript-logo {
     height: 70px;
 }
@@ -281,6 +285,8 @@ a:hover {
 .react-bar { background-color: #61DBFB; }
 .git-bar { background-color: #000000; }
 .photoshop-bar{background-color: #021c84;}
+.sass-bar {background-color: crimson;}
+.api-bar {background-color: #76f939;}
 
 .width-90 { width: 90%; }
 .width-70 { width: 70%; }
@@ -577,7 +583,7 @@ footer {
         font-size: 2rem;
     }
 
-    .parcours-pro{
+    #parcours-pro{
         padding: 15px;
     }
 
